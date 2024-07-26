@@ -1,0 +1,113 @@
+/* Global styles */
+* {
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container styles */
+.login-container {
+    width: 380px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(9px);
+    color: white;
+    border-radius: 14px;
+    padding: 30px 40px;
+}
+
+/* Heading styles */
+.login-container h1 {
+    font-size: 39px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form input styles */
+input,
+select,
+button {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 60px;
+    font-size: 15px;
+    color: white;
+    padding: 0 15px; /* Added padding for better visual alignment */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+input::placeholder,
+select {
+    color: white;
+}
+
+input:focus,
+select:focus,
+button:focus {
+    border-color: transparent;
+    outline: none; /* Remove default focus outline */
+}
+
+/* Form button styles */
+button {
+    background-color: #02a152;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Label styles */
+label {
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Role dropdown specific styles */
+#role {
+    appearance: none; /* Removes default styling */
+    -webkit-appearance: none; /* For older versions of WebKit */
+    -moz-appearance: none; /* For older versions of Firefox */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* Custom dropdown arrow */
+    background-position: right 15px center; /* Position arrow */
+    background-repeat: no-repeat; /* Prevents arrow from repeating */
+    background-color: transparent; /* Transparent background */
+    padding-right: 30px; /* Space for arrow */
+}
+
+#role option {
+    background-color: #333; /* Background color for dropdown options */
+    color: white; /* Text color */
+    padding: 10px 15px; /* Padding for options */
+}
+
+#role:hover,
+#role:focus {
+    border-color: rgba(255, 255, 255, 0.5); /* Hover and focus state */
+}
